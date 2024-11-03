@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>HTMX Tailwind Components</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/htmx.org@2.0.3/dist/htmx.js"
-    integrity="sha384-BBDmZzVt6vjz5YbQqZPtFZW82o8QotoM7RUp5xOxV3nSJ8u2pSdtzFAbGKzTlKtg"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/idiomorph@0.3.0/dist/idiomorph-ext.min.js"></script>
-</head>
-
-<body hx-ext="morph">
-  <div class="m-0 sm:m-4">
-    <div class="text-3xl">HTMX Tailwind Examples</div>
-    <div class="text-2xl my-10">Example Modal with Transitions</div>
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#" hx-swap="morph"
-      hx-get="modal_open.html" hx-target="#modal">Show Modal</button>
-    <div id="modal-container" hx-get="modal_closed.html" hx-trigger="load" hx-swap="innerHTML"></div>
-  </div>
-</body>
-
+  <head>
+    <title>HTMX Tailwind Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.3/dist/htmx.js"
+      integrity="sha384-BBDmZzVt6vjz5YbQqZPtFZW82o8QotoM7RUp5xOxV3nSJ8u2pSdtzFAbGKzTlKtg"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/idiomorph@0.3.0/dist/idiomorph-ext.min.js"></script>
+  </head>
+  <body hx-ext="morph">
+    <div class="m-0 sm:m-4">
+      <div class="text-3xl">HTMX Tailwind Examples</div>
+      <div class="text-2xl my-10">Example Modal with Transitions</div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#" hx-swap="morph"
+        hx-get="modal_open.html" hx-target="#modal">Show Modal</button>
+      <div id="modal-container" hx-get="modal_closed.html" hx-trigger="load" hx-swap="innerHTML"></div>
+    </div>
+  </body>
 </html>
